@@ -1,0 +1,59 @@
+.log_reg_container {
+  padding: 150px 15px 15px 15px;
+  transition: transform 0.5s ease;
+}
+
+.form_card {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  transition: all 0.4s ease;
+  color: var(--main-bg-color);
+}
+
+.form_card:hover {
+  box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form_controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form_submit_button {
+  background-color: var(--main-bg-color);
+  color: var(--white-bg-color);
+  transition: all 0.2s ease-in;
+  border: 2px solid transparent;
+}
+
+.form_submit_button:hover {
+  background-color: var(--white-bg-color);
+  color: var(--main-bg-color);
+  border: 2px solid var(--main-bg-color);
+}
+
+.log_reg_span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .log_reg_container {
+    padding: 100px 15px 15px 15px;
+  }
+
+  .form_controls {
+    font-size: 15px;
+    gap: 15px;
+    padding-right: 10px;
+  }
+}
